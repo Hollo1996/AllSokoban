@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6CCE881-A42F-478C-A974-06D098F0DB1A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Sokoban_2._0_Consol_Tester</RootNamespace>
+    <AssemblyName>Sokoban 2.0 Consol Tester</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Interface\ArrowsControllInterface.cs" />
+    <Compile Include="Exceptions\TextedException.cs" />
+    <Compile Include="Exceptions\WrongCoordException.cs" />
+    <Compile Include="Exceptions\WrongDirectionFormatException.cs" />
+    <Compile Include="Exceptions\WrongLineFormatException.cs" />
+    <Compile Include="Moveable\Box.cs" />
+    <Compile Include="Features\BoxContainer.cs" />
+    <Compile Include="Features\Button.cs" />
+    <Compile Include="Control\Command.cs" />
+    <Compile Include="Control\Interface\ControlInterface.cs" />
+    <Compile Include="Control\Direction.cs" />
+    <Compile Include="Control\Event.cs" />
+    <Compile Include="Features\FallTrap.cs" />
+    <Compile Include="Features\Feature.cs" />
+    <Compile Include="Field\Field.cs" />
+    <Compile Include="Field\Game.cs" />
+    <Compile Include="Field\GameField.cs" />
+    <Compile Include="Features\Hole.cs" />
+    <Compile Include="Moveable\Moveable.cs" />
+    <Compile Include="Features\MoveableVisitor.cs" />
+    <Compile Include="Control\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Features\Switchable.cs" />
+    <Compile Include="Control\Interface\WasdControlInterface.cs" />
+    <Compile Include="Moveable\Worker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

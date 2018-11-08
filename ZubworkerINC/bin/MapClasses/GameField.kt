@@ -1,0 +1,4 @@
+package MapClasses
+
+class GameField {
+}

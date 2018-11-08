@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{9B06E809-2F24-4126-9B36-87906F26B1B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SokobanLinux/Exceptions/TextedException.cs">
+    <Files>
+      <File FileName="SokobanLinux/Graphics/Graphic.cs" Line="185" Column="1" />
+      <File FileName="SokobanLinux/Graphics/LittleConsole/LittleWorkerRepresentation.cs" Line="46" Column="1" />
+      <File FileName="SokobanLinux/Graphics/LittleConsole/LittleRepresentation.cs" Line="9" Column="5" />
+      <File FileName="SokobanLinux/Graphics/LittleConsole/LittleFieldRepresentation.cs" Line="105" Column="1" />
+      <File FileName="SokobanLinux/Graphics/LittleConsole/LittleConsoleDataRepresentationFactory.cs" Line="10" Column="5" />
+      <File FileName="SokobanLinux/Graphics/Base/WorkerRepresentation.cs" Line="11" Column="5" />
+      <File FileName="SokobanLinux/Graphics/Base/MoveableRepresentation.cs" Line="9" Column="5" />
+      <File FileName="SokobanLinux/Graphics/Base/FieldRepresentation.cs" Line="13" Column="5" />
+      <File FileName="SokobanLinux/Graphics/Base/FeatureRepresentation.cs" Line="9" Column="5" />
+      <File FileName="SokobanLinux/Graphics/Base/DataRepresentationFactory.cs" Line="13" Column="6" />
+      <File FileName="SokobanLinux/Features/Feature.cs" Line="11" Column="12" />
+      <File FileName="SokobanLinux/Exceptions/WrongLineFormatException.cs" Line="1" Column="1" />
+      <File FileName="SokobanLinux/Controls/Liquid.cs" Line="9" Column="5" />
+      <File FileName="SokobanLinux/Controls/Direction.cs" Line="1" Column="1" />
+      <File FileName="SokobanLinux/Controls/ControlKeySetting.cs" Line="43" Column="6" />
+      <File FileName="SokobanLinux/Controls/ControlInterface.cs" Line="107" Column="1" />
+      <File FileName="SokobanLinux/Controls/Control.cs" Line="23" Column="32" />
+      <File FileName="SokobanLinux/UpperLayer/Game.cs" Line="108" Column="1" />
+      <File FileName="SokobanLinux/UpperLayer/Map/Position.cs" Line="7" Column="22" />
+      <File FileName="SokobanLinux/UpperLayer/Map/GameField.cs" Line="799" Column="1" />
+      <File FileName="SokobanLinux/UpperLayer/Map/FieldContainer.cs" Line="1" Column="1" />
+      <File FileName="SokobanLinux/UpperLayer/Map/Field.cs" Line="272" Column="58" />
+      <File FileName="SokobanLinux/Moveables/Worker.cs" Line="114" Column="25" />
+      <File FileName="SokobanLinux/Moveables/MoveableVisitor.cs" Line="1" Column="1" />
+      <File FileName="SokobanLinux/Moveables/Moveable.cs" Line="63" Column="1" />
+      <File FileName="SokobanLinux/Exceptions/WrongDirectionFormatException.cs" Line="1" Column="1" />
+      <File FileName="SokobanLinux/Exceptions/WrongCoordException.cs" Line="1" Column="1" />
+      <File FileName="SokobanLinux/Exceptions/TextedException.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/boss/Dokumentumok/CodesAndProgrames/ProgramCodes/link_SokobanLinux/SokobanLinux/UpperLayer/Map/GameField.cs" relfile="SokobanLinux/UpperLayer/Map/GameField.cs" line="603" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SokobanLinux PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

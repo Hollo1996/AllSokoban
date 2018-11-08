@@ -1,0 +1,12 @@
+fields:
+(0;0)
+box:
+boxcontainers:
+button:
+falltrap:
+hole:
+neighbourhood:
+wires:
+compatibility:
+spawnplaces:
+(0;0) 5

@@ -1,0 +1,4 @@
+package BasicClasses
+
+class Position {
+}

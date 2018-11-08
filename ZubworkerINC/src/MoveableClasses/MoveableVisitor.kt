@@ -1,0 +1,4 @@
+package MoveableClasses
+
+class MoveableVisitor {
+}

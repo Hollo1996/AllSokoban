@@ -1,0 +1,4 @@
+package ControlClasses
+
+class ControlKeySettings {
+}

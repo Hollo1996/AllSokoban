@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokoban_2.0_Console_Tester", "Sokoban_2.0_Console_Tester\Sokoban_2.0_Console_Tester.csproj", "{D3D00ABE-7718-436A-8FB5-67CDA7EC165E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3D00ABE-7718-436A-8FB5-67CDA7EC165E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D00ABE-7718-436A-8FB5-67CDA7EC165E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D00ABE-7718-436A-8FB5-67CDA7EC165E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D00ABE-7718-436A-8FB5-67CDA7EC165E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14777CF2-9D2F-4E13-AED6-AA8C2DA9FF90}
+	EndGlobalSection
+EndGlobal

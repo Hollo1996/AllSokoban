@@ -1,0 +1,4 @@
+package FeatureClasses
+
+interface Feature {
+}

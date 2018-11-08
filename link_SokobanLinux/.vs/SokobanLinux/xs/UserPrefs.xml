@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{9B06E809-2F24-4126-9B36-87906F26B1B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SokobanLinux/UpperLayer/Map/GameField.cs">
+    <Files>
+      <File FileName="SokobanLinux/UpperLayer/Game.cs" Line="104" Column="19" />
+      <File FileName="SokobanLinux/UpperLayer/Map/GameField.cs" Line="377" Column="39" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/hollo/links/link_SokobanLinux/SokobanLinux/UpperLayer/Map/GameField.cs" relfile="SokobanLinux/UpperLayer/Map/GameField.cs" line="599" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SokobanLinux PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
