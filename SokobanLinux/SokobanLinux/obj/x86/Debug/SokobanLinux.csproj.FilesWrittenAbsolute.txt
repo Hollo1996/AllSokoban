@@ -1,0 +1,5 @@
+/home/boss/Documents/MyCodesAndProgrames/AllSokoban/SokobanLinux/SokobanLinux/obj/x86/Debug/.NETFramework,Version=v4.7.AssemblyAttribute.cs
+/home/boss/Documents/MyCodesAndProgrames/AllSokoban/SokobanLinux/SokobanLinux/bin/Debug/SokobanLinux.pdb
+/home/boss/Documents/MyCodesAndProgrames/AllSokoban/SokobanLinux/SokobanLinux/bin/Debug/SokobanLinux.exe
+/home/boss/Documents/MyCodesAndProgrames/AllSokoban/SokobanLinux/SokobanLinux/obj/x86/Debug/SokobanLinux.exe
+/home/boss/Documents/MyCodesAndProgrames/AllSokoban/SokobanLinux/SokobanLinux/obj/x86/Debug/SokobanLinux.pdb

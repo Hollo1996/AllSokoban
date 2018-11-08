@@ -28,10 +28,10 @@ namespace Sokoban_2._0_Console.UpperLayer
         //Loads in list of Saved games
         //Calls Options loop
         //private becouse of singleton pattern
-		private  Game() {  }
+        private Game() {  }
         //Singleton Pattern
-        private static readonly Game onlyInstance = new Game();
-		public static Game Instance => onlyInstance;
+        private static Game onlyInstance = new Game();
+        public static Game Instance => onlyInstance;
 
         //Loads Command from a txt
         public void LoadCommand(string nameOfTxt) {
