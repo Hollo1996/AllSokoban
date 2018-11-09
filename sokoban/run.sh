@@ -1,0 +1,3 @@
+javac src/hu/bme/sch/sokoban/*.java src/hu/bme/sch/sokoban/game/*.java src/hu/bme/sch/sokoban/game/commons/*.java src/hu/bme/sch/sokoban/game/controls/*.java src/hu/bme/sch/sokoban/game/entities/*.java src/hu/bme/sch/sokoban/game/features/*.java src/hu/bme/sch/sokoban/game/graphics/*.java src/hu/bme/sch/sokoban/game/map/*.java
+jar -cf sokoban.jar src/hu/bme/sch/sokoban imageSet/
+java -cp src/ hu.bme.sch.sokoban.Main

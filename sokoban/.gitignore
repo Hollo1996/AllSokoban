@@ -1,0 +1,7 @@
+.idea/
+Sokoban.iml
+out/
+/bin/
+**/*.class
+.classpath
+.project
