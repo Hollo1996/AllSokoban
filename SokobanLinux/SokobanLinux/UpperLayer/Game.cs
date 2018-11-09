@@ -77,7 +77,7 @@ namespace Sokoban_2._0_Console.UpperLayer
             if(matchRunning)
 				return !matchRunning;
             FieldContainer.Send();
-			GameField.Instance.LoadMap("new/Neighbourhood/test_map9");
+			GameField.Instance.LoadMap("new/Moveables/test_map16");
             GameField.Instance.AddControlInterface(Control.Instance.ControlInterfaces);
             Graphic.Instance.Start();
             Control.Instance.readKeyLoop();

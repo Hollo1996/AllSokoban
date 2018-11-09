@@ -1,0 +1,20 @@
+Field:
+(0;0)
+(0;1)
+(0;2)
+(0;3)
+box:
+(0;1)
+(0;2)
+boxcontainers:
+button:
+falltrap:
+hole:
+neighbourhood:
+(0;0)-(0;1) U D
+(0;1)-(0;2) U D
+(0;2)-(0;3) U D
+wires:
+compatibility:
+spawnplaces:
+(0;0) 5

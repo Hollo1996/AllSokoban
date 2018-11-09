@@ -47,7 +47,7 @@ namespace Sokoban_2._0_Console.UpperLayer
         public void CommandLoop() {
             string command="";
             while (command.CompareTo("Close")!=0) {
-				if (command.CompareTo("") != 0)
+                if (command != "")
                     CommandHandler(command);
                 command=Console.ReadLine();
             }

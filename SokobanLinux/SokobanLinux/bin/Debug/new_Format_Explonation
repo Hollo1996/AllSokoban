@@ -1,0 +1,48 @@
+
+ 	 
+#You can leave empty lines, or lines full of spaces and tabs. They will be ignored. Spaces and tabs in not empty lines are also ignored.
+#You can add comments in lines starting with a '#'
+Field: (0;0), (1;0), (2;2)
+#Words with a ':' on their end markes the type of the objects comming after them.
+#You can list the items right after them
+#Fields are represented only with their coords.
+(0;1), (1;1), (2;1)
+#You can add elements later too with ',' between them.
+(0;2)
+(1;2)
+(2;0)
+#Or just adding one/line
+#Their order those not matter
+Hole: (1;1)
+BoxContainer: (2;2)
+Button: (2;0), (0;2)
+#You can add Features to the allready listed fields
+Box:(2;1), (1;2)
+Spawn:(0;0)
+#You can add Moveables to the allready listed fields. Spawn is the pleaces where new players should be spawned.
+Neighborhood:
+(0;0) -U>(0;2) -R>(1;0) -D>(0;1)
+(1;0) -R>(2;0) -D>(1;1) -L>(0;0)
+(2;0)  -R>(2;2) -D>(2;1) -L>(1;0)
+
+(0;1) ->ALL, (1;1) ->ALL, (2;1) ->ALL
+
+(0;2) ->ALL -D>(0;0)
+(1;2) -U>(1;1) -R>(2;2) -L>(0;2)
+(2;2) -U>(2;1) -R>(2;0) -L>(1;2)
+#You can add all of the connections of the Field with eachother in one line too, but it would be ugly. The letters U,R,D,L represents the direction(Up,Down,Right,Lef)
+#Ofcorse you can use only coords of existing fields, and only one coord/source Field/direction.
+#The keyword "ALL" adds all immediate neighbour. For example "(1;1) -U>(1;0) -R>(1;2) -D>(2;1) -L>(0;1)" will be generated from "(1;1) -ALL".
+#There are going to be closer forms for adding a rectangle of Fields and fill the connections between them automatically;
+
+Compatibility:(2;2)->(2;1)->(1;2)
+#The boxes must be pushed into BoxContainers Conneced to theme
+Wire:
+#After Switchables were added, You will be able to define their connections to buttons here. like: "(2;0)->(0;1)->(1;0)" Where the first coord is the button and the other two are the Switchables.
+
+#There Can be maximum one Field,Feature,Moveable declared two one coord. There must be allready a Field declared to the coords of the moveable or Feature declared to that place. There must be allready one Item with the right type for every coordinate in the connections. like: (0;0)->(1;1) is a two times two sqare. (0;0)->(3;0) and (0;0..3) are 3 long lines. This could be used for Features, boxes and Workers too.
+#So You may first declare the places of the field, than the Features, than the moveables, than all the connections between them.
+#All is going to have an other wersion "AllD" Witch connects the Field with the first Fields in the directions. You may declare unusal connections beforethe All and AllD tags. They will not add Fields in those connections.
+
+ 
+

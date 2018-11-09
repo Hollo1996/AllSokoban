@@ -1,0 +1,71 @@
+A '-' a default érték és az irreleváns jele.
+Egy ')' és az utána lévő '(' távolsága a köztük lévő viszonyra vonatkozó nem default adatok mennyiségét is jelzik.
+
+kimenő/bejövő/kétirányú/random: -...> / <...- / <...> /-...-
+
+random végpont: (R;R)
+automatikusan számított végpont: (A;A)
+adott végpontú: (x;y)				//itt x és y számokat jelöl
+érvénytelen: (;)
+
+/automatikus irány: -AU> 			//AUTOMATIC	(#default1)
+/random irány: -RA> 				//RANDOM	(#default2)
+/adott irányú: -UP> / -RI> / -DO> / -LE>	//UP,DOWN,RIGHT,LEFT
+/adott tengejű: -OR> / -HO> 			//ORTOGONAL,HORIZONTAL
+/minden irányú: -AL> 				//ALL
+Két betűsek, ezért az elsőt észleljük, és megnézzük a következő karaktert is. Találat esetén a következő betűt kihagyjuk.
+A check for U,L
+R check for A,I
+U check for P
+D check for O
+L check for E
+O check for R
+H check for O
+
+A berakandó élek helyéhez három információ kell. A két végpont és az irányok. Viszont mind a hármat megadni túl korlátozó.
+Ezért:
+Ha ezek mind adottak, akkor meg is volnánk.
+Ha az egyik hiányik, akkor azt a másik kettőből következtetjük ki.
+
+közvetlen/közvetett: #/=
+
+próba/mindenképp: ?/!
+
+hozzáadás/törlés: +/×
+
+adat szerkezete:	- bal csúcs: (;) vagy (*;*) vagy (x1;y1)
+			- összekötő él:	- az eleje jelöli a visszafele irányt ('<' vagy '-')
+					- a közepe tetszőleges csúcs és a két irányon kívülis sorrendek nem default értékeit jelöli.
+					- a vége jelöli az odafele irányt ('>' vagy '-')
+			- jobb csúcs: (;) vagy (*;*) vagy (x2;y2)
+
+minimális méret:
+(x;y)->(x;y) //minden default, de így meg kell adni a végpontokat
+
+
+
+(x;y)----->(x;y) //minden default, de így meg kell adni a végpontokat
+(x;y)-U#?+>(x;y) //ugyanez megadva a default értékeket
+(x;y)-U#?+>(x;y)|-D#?+>(x;y) //sorosítás
+
+
+ szükséges adatok:
+	- towardsRightSide	(bool)(false)
+	- towardsLeftSide	(bool)(false)
+	- random		(bool)(false)
+	- directionsToSet	(bool[4]={false,false,false,false})
+	- immediat		(bool)(true)
+	- optional		(bool)(true)
+	- add			(bool)(true)
+	- givenLeftSide		(bool)(true)
+	- givenRightSide	(bool)(true)
+
+2^11=2048
+
+fő esetek:
+minden adott: OK
+1.Jobb hiány: keressük ki a lehetséges bal oldalakat.
+2.Bal hiány: keressük ki a jobb oldalakat.
+3.irány hiány: A két csúcs alapján egy vízszintes és egy függőleges irányt is összeállíthat.
+2,3 hasonló
+

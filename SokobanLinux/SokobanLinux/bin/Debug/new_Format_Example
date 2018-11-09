@@ -1,0 +1,13 @@
+Field:(0;0)->(2;2)
+Hole: (1;1)
+BoxContainer: (2;2)
+Button: (2;0), (0;2)
+Box:(2;1), (1;2)
+Spawn:(0;0)
+Neighborhood:
+(0;0)->ALL-U>(0;2), (1;0)->ALL, (2;0)->ALL-R>(2;2)
+(0;1)->ALL, (1;1)->ALL,(2;1)->ALL
+(0;2)->ALL-D>(0;0), (1;2)->ALL, (2;2)->ALL-R>(2;0)
+Compatibility:(2;2)->ALL
+#the BoxContainer on (2;2) is compatible with all Boxes
+
