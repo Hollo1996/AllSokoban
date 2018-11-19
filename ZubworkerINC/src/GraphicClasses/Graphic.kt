@@ -1,4 +1,0 @@
-package GraphicClasses
-
-class Graphic {
-}

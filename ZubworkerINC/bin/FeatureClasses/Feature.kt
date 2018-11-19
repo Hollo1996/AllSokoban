@@ -1,4 +1,0 @@
-package FeatureClasses
-
-interface Feature {
-}

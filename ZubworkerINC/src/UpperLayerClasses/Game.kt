@@ -1,4 +1,0 @@
-package UpperLayerClasses
-
-class Game {
-}

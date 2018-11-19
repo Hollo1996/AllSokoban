@@ -1,4 +1,0 @@
-package MoveableClasses
-
-class MoveableVisitor {
-}

@@ -1,4 +1,0 @@
-package ControlClasses
-
-class ControlInterface {
-}
