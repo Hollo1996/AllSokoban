@@ -28,17 +28,18 @@ class EasyWeightBitMap(var columnSize: Int, var lineSize: Int) {
                 pixels[y * columnSize + x] = _pixels[y * columnSize + x]
     }
 
-    fun makeBitMap(): Bitmap {
-        return Bitmap.createBitmap(pixels, columnSize, lineSize, Bitmap.Config.ARGB_8888)
+    fun copyToBitmap(bmp: Bitmap) {
+        for (col in 0..(columnSize - 1))
+            for (lin in 0..(lineSize - 1)){
+                bmp.setPixel(col, lin, this[col, lin])
+            }
     }
 
     fun DrawOn(other: EasyWeightBitMap, startCorner: Position) {
-        var A: Int
         for (x in 0..(other.columnSize - 1))
             for (y in 0..(other.lineSize - 1)) {
-                A = other[x, y].getA()
-                this[x + startCorner.column, y + startCorner.line] =
-                        this[x + startCorner.column, y + startCorner.line].plusColor(other[x, y])
+                this[x + startCorner.column, y + startCorner.line] = other[x, y]
+                        //this[x + startCorner.column, y + startCorner.line].plusColor(other[x, y])
             }
 
 
@@ -65,11 +66,11 @@ class EasyWeightBitMap(var columnSize: Int, var lineSize: Int) {
     fun Int.setB(B: Int): Int = (this and 0xFFFFFF00.toInt()) + B.getB()
 
     fun Int.multiplyA(A: Int): Int {
-        val multiplyer=A.getA().shr(24) / 0xFF.toDouble()
-        var tmp=this
-        tmp=tmp.setR((this.getR()*multiplyer).toInt())
-        tmp=tmp.setG((this.getR()*multiplyer).toInt())
-        tmp=tmp.setB((this.getR()*multiplyer).toInt())
+        val multiplyer = A.getA().shr(24) / 0xFF.toDouble()
+        var tmp = this
+        tmp = tmp.setR((this.getR() * multiplyer).toInt())
+        tmp = tmp.setG((this.getR() * multiplyer).toInt())
+        tmp = tmp.setB((this.getR() * multiplyer).toInt())
         return tmp
     }
 

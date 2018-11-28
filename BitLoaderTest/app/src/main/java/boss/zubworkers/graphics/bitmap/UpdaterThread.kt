@@ -8,6 +8,9 @@ import boss.zubworkersinc.graphics.bitmap.EasyWeightBitMap
 import java.util.*
 
 class UpdaterThread(private val owner: BitLoader) : NotifiableThread("Updater") {
+
+    private val colors= intArrayOf(0xFFFF0000.toInt(),0xFF00FF00.toInt(),0xFF0000FF.toInt())
+
     override fun run() {
         super.run()
 
@@ -30,8 +33,8 @@ class UpdaterThread(private val owner: BitLoader) : NotifiableThread("Updater") 
                 ////println("\n I jast started Updating!")
                 for (col in 0..3) {
                     for (lin in 0..3) {
-                        if (r.nextInt() % 4 != 0)
-                            break
+                        //if (r.nextInt() % 4 != 0)
+                        //    break
                         changed = true
                         owner.Picture.DrawOn(
                             EasyWeightBitMap(

@@ -7,7 +7,7 @@ open class NotifiableThread(name: String) : Thread(name+ idGen.toString()) {
     init {
         idGen+=1
     }
-    protected var bufferLock: BuffererLock = BuffererLock(name,false)
+    protected var bufferLock: BuffererLock = BuffererLock(name)
     open fun Notify(name: String) {
         bufferLock.Notify(name)
     }

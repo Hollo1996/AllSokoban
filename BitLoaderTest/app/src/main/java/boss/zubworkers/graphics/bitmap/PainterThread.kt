@@ -70,8 +70,8 @@ class PainterThread(private val owner: BitLoader) : NotifiableThread("Painter") 
     }
 
     private fun PaintIt(canvas: Canvas?) {
-        val bmp=owner.Picture.makeBitMap()
-
+        val bmp=Bitmap.createBitmap(owner.Picture.columnSize,owner.Picture.lineSize,Bitmap.Config.ARGB_8888)
+        owner.Picture.copyToBitmap(bmp)
         val canRect = Rect(0, 0, smaller , smaller )
         canvas?.drawBitmap(bmp, null, canRect, null)
 
