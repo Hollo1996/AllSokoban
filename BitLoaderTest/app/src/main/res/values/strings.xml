@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">BitLoaderTest</string>
+    <string name="upButton">UP</string>
+    <string name="leftButton">LEFT</string>
+    <string name="downButton">DOWN</string>
+    <string name="rightButton">RIGHT</string>
+    <string name="worker1">Worker1</string>
+    <string name="worker3">WORKER3</string>
+    <string name="worker2">WORKER2</string>
+    <string name="allWorker">ALL</string>
 </resources>

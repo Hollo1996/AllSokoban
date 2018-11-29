@@ -6,11 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".SurfaceActivity">
 
-    <boss.zubworkersinc.graphics.bitmap.BitLoader
-            android:id="@+id/surfaceBL"
+    <boss.zubworkersinc.view.MySurface
+            android:id="@+id/surfaceMS"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
     />
+    <LinearLayout
+            android:id="@+id/controlButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/surfaceMS"
+    >
+        <Button
+                android:id="@+id/leftB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/leftButton"
+        />
+        <Button
+                android:id="@+id/upB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/upButton"
+        />
+        <Button
+                android:id="@+id/downB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/downButton"
+        />
+        <Button
+                android:id="@+id/rightB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rightButton"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/workerchoser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/controlButtons"
+    >
+        <Button
+                android:id="@+id/worker1B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/worker1"
+        />
+        <Button
+                android:id="@+id/worker2B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/worker2"
+        />
+        <Button
+                android:id="@+id/worker3B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/worker3"
+        />
+        <Button
+                android:id="@+id/worker4B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/allWorker"
+        />
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
